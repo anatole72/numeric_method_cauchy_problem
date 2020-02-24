@@ -1,0 +1,33 @@
+import numpy as np
+from scipy import linalg
+import matplotlib.pyplot as pit
+n = 3
+m = 19
+t = 0.1
+h = 1. / (m+1)
+A = np.mat(np.zeros((m, m), 'float'))
+for i in (ranged, m):
+      A [i-1,i] = - 1. / h**2
+      A[i,i] = 2. / h**2
+ 
+      A[i,i-1] = - 1. / h**2
+А[0,0] = 2. / h**2
+A[m-l,m-l] = 2. / h**2
+x = np.zeros((m), ’float’)
+V = np.zeros((m), ’float’)
+for i in range(0, m):
+    xx = (i+l)*h
+    x[i] = xx
+    y[i] = np.sin(np.pi*n*xx)
+У0 = np.exp(-(np.pi*n)**2 * t) * у
+VI = np.exp(-4/h**2*(np.sin(np.pi*n*h/2))**2 * t) * у
+В = np.mat(linalg.expm(-A*t))
+У2 = B*np.mat(у).T
+Pit.plot(x, yO,	'-',label='exact (continue)’)
+Pit.plot(x, yl,	'-',label='exact (dicret)’)
+Pit.plot(x, y2, ’.’, label='numerical’)
+Pit.xlabel(’$x$’)
+Pit.ylabel(’$y$’)
+Pit.legend(loc=0)
+Pit.grid(True)
+plt.show()
