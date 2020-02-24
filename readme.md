@@ -1,7 +1,8 @@
-![1](image-20200224160222208.gif)
+
 
 example of using a matrix exponent in solving
 Cauchy's problem:
+![1](image-20200224160222208.gif)
 
 
 
